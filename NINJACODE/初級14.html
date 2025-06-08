@@ -1,0 +1,42 @@
+<ul style="margin-bottom: 30px;">
+    <li>[奇数]文字赤色</li>
+    <li>[偶数]文字緑色</li>
+    <li>[奇数]文字赤色</li>
+    <li>[偶数]文字緑色</li>
+    <li>[奇数]文字赤色</li>
+    <li>[偶数]文字緑色</li>
+</ul>
+<div>
+    <span style="display: block">下の文字を太くしてください</span>
+    <span style="display: block">この文字を太くしてください</span style="display: block">
+    <i style="margin-top: 30px;display: block">この文字を青色に</i>
+    <p>この文字を青色に</p>
+</div>
+<style>
+    ul {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    ul>li:nth-child(odd) {
+        color: red;
+    }
+
+    ul>li:nth-child(even) {
+        color: green;
+    }
+
+    div>span+span {
+        font-weight: bold;
+    }
+
+    i,
+    p {
+        color: blue;
+    }
+
+    16行目 文字の位置の設定をするためのもの padding: 0%は横幅余白をなくすためのもの margin: 0%は縦の余白をなくすためのもの 18行目はリストのスタイルをなくすためのもの もともとは文の前に●がついているが、これをなくすためのもの 21行目はリストの奇数番目の文字を赤色にするためのもの nth-child(odd)は奇数番目の要素を選択するためのもの 24行目はリストの偶数番目の文字を緑色にするためのもの nth-child(even)は偶数番目の要素を選択するためのもの 27行目はspanタグの中で、spanタグの後ろにあるspanタグを太字にするためのもの よくわからない 30行目はiタグとpタグの文字を青色にするためのもの
