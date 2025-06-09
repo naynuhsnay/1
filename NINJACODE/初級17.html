@@ -6,9 +6,32 @@
 <style>
     ul {
         list-style: none;
+        border-top: #030ff6 solid 2px;
+        padding: 2px;
+
+    }
+
+    li {
+        border-bottom: 2px dotted #f60303;
+        padding: 5px;
+    }
+
+    li:last-child {
+        border-bottom: solid #030ff6;
+        padding: 18px;
+    }
 
 
 
 
+    これはまだ途中。続きは6/9に取り組むこと。 8行目はリストスタイルを削除するためのもの。もともとはそれぞれのリストに●がついていた。 9行目はulタグの上に実線のボーダーを引くためのもの。 10行目 paddingは余白の指定をするためのもの。 12行目はリストの下に点線を引くためのもの。 dottedは点線、solidは実線、doubleは二重線。 ・none:ボーダーは表示されない。(デフォルト値) ・solid:1本線で表示される ・double:2本線で表示される ・dashed:破線で表示される ・ridge:隆起した線で表示される 15行目 last-childは最後の要素を指定するためのもの。 ↓これが完成形 自分で調べたものに※display: inline-block;
+    を追加してあれば画面の表示は同じだった。 ul list-style: none;
+    border-top: 1px solid;
+    display: inline-block;
+    padding: 0;
+    }
 
-        これはまだ途中。続きは6/9に取り組むこと。
+    li border-bottom: 1px dotted;
+    padding: 8px 0;
+
+    li:last-child border-bottom: 1px solid;
